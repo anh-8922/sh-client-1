@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom";
-
+import logosh from '../Assets/logosh.png';
+import '../Styles/Components.css';
 
 export default function Navigator() {
     return (
-        <div style={{
-            backgroundColor:'whitesmoke', borderRadius:'50%', margin:'1rem',
-            display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+        <div className='nav-bar'>
             <Logo/>
             <ul>
                 <li><NavLink>Discover</NavLink></li>
@@ -21,8 +20,9 @@ export default function Navigator() {
 
 export function Logo() {
     return(
-        <>
-            <image></image>
-        </>
+        <div style={{display:'flex', flexDirection:'row', alignItems:'center', gap:'1rem'}}>
+            <img src={logosh} alt="logo" style={{width:'4rem'}}/>
+            <h1>Settlers Hub</h1>
+        </div>
     )
 }
