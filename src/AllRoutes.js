@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/HomePage";
+import Landing from "./Pages/LandingPage";
 
 export default function AllRoutes () {
     return(
@@ -12,7 +13,8 @@ export default function AllRoutes () {
         <Route path="/forgotpassword" element={<ForgotPassowrd/>}/>
       </Route>
     */}
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Landing/>}/>
+        <Route path="/home" element={<Home/>}/>
 
         {/* <Route path= '/singlepropertypage/:id' element = {<SingleProperty/>} /> 
             <Route path="/singleguidepost/:id" element={<SingleSubPage/>} />

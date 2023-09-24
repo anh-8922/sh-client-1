@@ -1,16 +1,21 @@
 import herosectionA from '../Assets/herosectionA.jpg';
-import Navigator from '../Components/Navigator';
+import '../Styles/Pages.css';
 import MainLayout from '../Layouts/MainLayout';
+import News from '../Components/News';
+import Category from '../Components/Category';
 
 export default function Home() {
     return(
         <MainLayout>
-            <div style={{
-                backgroundImage: `url("${herosectionA}")`, backgroundSize:'cover',
-                width:'100%', height:'45rem', padding: '1.5rem 2rem 0'}}>
+            <div className='heroSectionA' style={{
+                backgroundImage: `url("${herosectionA}")`}}>
+                <h1>There should be some title here</h1>
             </div>
+            <Category/>
+            <News/>
             
         </MainLayout>
+        
        
     )
 }
